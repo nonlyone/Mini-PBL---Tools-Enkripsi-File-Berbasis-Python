@@ -5,14 +5,14 @@ from cryptography.fernet import Fernet
 
 FILE_SIGNATURE = b'RKS1' 
 
+# =================== GENERATE KUNCI FERNET ==================
 def buat_kunci():
-    
     print("Sedang generate kunci rahasia...", end="")
     time.sleep(1) 
     
     kunci = Fernet.generate_key()
     
-    # =================== SIMPAN FILE KUNCI ===================
+    # =================== SIMPAN FILE KUNCI FERNET ===================
     with open("kunci_rahasia.key", "wb") as f:
         f.write(kunci)
     
@@ -60,7 +60,7 @@ def enkripsi_file(file_asli):
         print(f"[INFO] File aman! Disimpan sebagai: {file_enkripsi}")
         
         # Hapus file asli (Opsional)
-        # os.remove(file_asli) 
+        os.remove(file_asli) 
         return True
         
     except FileNotFoundError:

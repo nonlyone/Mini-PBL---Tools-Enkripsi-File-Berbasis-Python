@@ -10,7 +10,7 @@ def main():
     print("[INIT] Memeriksa kompatibilitas sistem...")
     time.sleep(1)
 
-    # =================== Deteksi Sistem Operasi ===================
+    # =================== Deteksi Sistem Operasi User ===================
     os_type = platform.system()
     print(f"[INFO] Sistem Operasi Terdeteksi: {os_type}")
 
@@ -20,7 +20,7 @@ def main():
 
     # =================== JIKA OS USER ITU WINDOWS ===================
     if os_type == "Windows":
-        print("[INFO] Mencoba memuat GUI Modern...")
+        print("[INFO] Memuat tampilan...")
         try:
             
             import gui_app 
@@ -31,7 +31,7 @@ def main():
         except ImportError as e:
             
             print(f"\n[WARNING] Library GUI kurang lengkap ({e}).")
-            print("[ACTION] Mengalihkan ke Mode CLI (Terminal Safe Mode).")
+            print("[ACTION] Mengalihkan ke Mode CLI (Mode Terminal).")
             time.sleep(2)
             masuk_mode_cli()
 
