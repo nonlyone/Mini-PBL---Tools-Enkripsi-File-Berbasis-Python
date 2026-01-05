@@ -3,4 +3,4 @@ Tujuan tools ini adalah untuk melakukan enkripsi pada sebuah file dokumen dan fo
 
 Jika ingin Menignstal / Mencobanya bisa ke Folder
 
-Package - Klik SecureVault_V1 - Klik ViewRaw / Tombol Unduh
+Package -> Klik SecureVault_V1 -> Klik ViewRaw / Tombol Unduh
