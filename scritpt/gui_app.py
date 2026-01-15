@@ -23,10 +23,10 @@ class AplikasiVault(ctk.CTk):
         self.grid_columnconfigure(0, weight=1)
 
         # 1. Header Judul 
-        self.lbl_judul = ctk.CTkLabel(self, text="SECURE VAULT SYSTEM v1.0", font=("Consolas", 26, "bold"))
+        self.lbl_judul = ctk.CTkLabel(self, text="BRANGKASMU V. 0.1", font=("Consolas", 26, "bold"))
         self.lbl_judul.grid(row=0, column=0, pady=(30, 10))
         
-        self.lbl_subjudul = ctk.CTkLabel(self, text="Algoritma: Fernet (AES-128) + Custom Header SVR1", font=("Consolas", 12))
+        self.lbl_subjudul = ctk.CTkLabel(self, text="Algoritma: Fernet (AES-128)", font=("Consolas", 12))
         self.lbl_subjudul.grid(row=1, column=0, pady=(0, 20))
 
         # 2. Frame Pilih File
@@ -62,7 +62,7 @@ class AplikasiVault(ctk.CTk):
         self.lbl_status.grid(row=4, column=0, pady=20)
 
         # 5. Footer / Tombol Bahaya
-        self.btn_reset = ctk.CTkButton(self, text="⚠ RESET KEY SYSTEM ⚠", 
+        self.btn_reset = ctk.CTkButton(self, text="⚠ RESET KEY ⚠", 
                                        fg_color="transparent", border_width=1, border_color="gray", text_color="gray",
                                        hover_color="#333333",
                                        command=self.aksi_reset_key)

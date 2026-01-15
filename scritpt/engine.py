@@ -11,7 +11,7 @@ def buat_kunci():
     time.sleep(1) 
     
     kunci = Fernet.generate_key()
-    
+     
     # =================== SIMPAN FILE KUNCI FERNET ===================
     with open("kunci_rahasia.key", "wb") as f:
         f.write(kunci)

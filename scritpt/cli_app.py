@@ -20,7 +20,7 @@ def show_banner():
   | ___) |\ V / |  _ <| ||
   ||____/  \_/  |_| \_\_||
   '----------------------'
-    -- SECURE VAULT CLI V1.0 --
+    -- BRANGKASMU V. 0.01 --
     """)
 
 def login_dulu():
@@ -70,6 +70,8 @@ def run_cli():
         
         # TES
         choice = input("root@secure-vault:~# ")
+
+        #LOGIKA CHOICE ATAU PEMILIHAN MENU
 
         if choice == '1':
             print("\n[WARNING] Membuat kunci baru akan membuat file lama TIDAK BISA DIBUKA selamanya.")
